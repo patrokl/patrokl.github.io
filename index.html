@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Get Current URL in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      let href = window.location.href;
+      if (href.indexOf("riisu.co") > 0) {
+        href = href
+          .replace("https://riisu.co", "https://www.riisu.co")
+          .replace("http://riisu.co", "http://www.riisu.co");
+        window.location.replace(href);
+      }
+    </script>
+    Hello world
+  </body>
+</html>
